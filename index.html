@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#about">Sobre a loja</a>
+                        <a href="#about">About us</a>
                     </li>
                     <li>
-                        <a href="#contact">Contato</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -28,19 +28,22 @@
 
     <section id="about">
         <div class="container">
-            <img class="store-front" src="images/loja.jpg" alt="Fachada da loja games shop">
+            <img class="store-front" src="images/store.png" alt="Games Shop store" />
             <div>
-                <h2>Sobre a loja</h2>
+                <h2>About us</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore mollitia hic tempore soluta cumque nam quos id vel minima itaque consequuntur magni possimus quasi, eaque libero! Molestias, ducimus architecto.
+                    At Games Shop, we believe gaming is more than just a hobby — it’s a way to connect, explore, and unleash your imagination. Founded in 2015 by a group of passionate gamers, our mission is to bring the latest and greatest games, consoles, and accessories to players of all levels.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore mollitia hic tempore soluta cumque nam quos id vel minima itaque consequuntur magni possimus quasi, eaque libero! Molestias, ducimus architecto.
+                    Whether you’re a casual player looking for fun, a hardcore gamer chasing the next challenge, or a collector hunting for rare editions, Games Shop has something for you. We pride ourselves on exceptional customer service, a curated selection of games, and a community that shares your love for gaming.
+                </p>
+                <p>
+                    Step into Games Shop, and let the adventure begin!
                 </p>
                 <ul class="brands-list">
-                    <li><img src="images/nintendo.png" alt="Nintendo"></li>
-                    <li><img src="images/xbox.png" alt="Xbox"></li>
-                    <li><img src="images/playstation.png" alt="Playstation"></li>
+                    <li><img src="images/nintendo.png" alt="Nintendo" /></li>
+                    <li><img src="images/xbox.png" alt="Xbox" /></li>
+                    <li><img src="images/playstation.png" alt="Playstation" /></li>
                 </ul>
             </div>
         </div>
@@ -48,43 +51,52 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Contato</h2>
+            <h2>Contact</h2>
             <div class="contact-methods">
                 <div>
-                    <h3>Fale conosco</h3>
-                    <form action="">
-                        <input type="text" placeholder="Seu nome" required>
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <input type="tel" placeholder="Seu telefone (opcional)">
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
+                    <h3>Contact us</h3>
+                    <form id="form-contact" action="">
+                        <input type="text" placeholder="Your fullname" id="full-name">
+                        <p class="small-text" id="name-failed"></p>
+                        <input type="email" placeholder="E-mail" id="email">
+                        <p class="small-text"></p>
+                        <input type="tel" placeholder="Phone (optional)" id="phone-number">
+                        <textarea placeholder="Your message" id="message"></textarea>
+                        <p class="small-text"></p>
+                        <button type="submit">Send</button>
                     </form>
+
+                    <p class="success-message"></p>
                 </div>
+
                 <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="images/instagram.png" alt="Logo do Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="images/facebook.png" alt="Logo do Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no Youtube">
-                                <img src="images/youtube.png" alt="Logo do Youtube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScript n° 124, Vila HTML - São Paulo - SP
-                    </p>
+                    <div class="social">
+                        <h3>Follow Us</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram">
+                                    <img src="images/instagram.png" alt="Instagram Icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook">
+                                    <img src="images/facebook.png" alt="Facebook Icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank" title="Visit our Youtube channel">
+                                    <img src="images/youtube.png" alt="Youtube Icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="address">
+                        <h3>Come to us</h3>
+                        <p>
+                            Games Street n° 33, Santa's Ville - North Pole
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,9 +105,11 @@
     <footer>
         <div class="container">
             <p>
-                &copy; Games Shop - Todos os direitos reservados - 2022
+                &copy; Games Shop - All rights reserved - <span id="current-year"></span>
             </p>
         </div>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
